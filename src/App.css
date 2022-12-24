@@ -1,4 +1,6 @@
-.center{
+
+
+.header{
     height: 100%;
     background: #f0131e;
     display: flex;
@@ -7,3 +9,7 @@
     text-align: center;
     color: aliceblue;
   }
+
+  
+
+

@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../Styles/MovieCard.css";
 
-
 const MovieCard = ({ titulo, tipo, poster, estreno }) => {
   const navigate = useNavigate();
   const goToHome = () => navigate("/");
@@ -18,22 +17,24 @@ const MovieCard = ({ titulo, tipo, poster, estreno }) => {
 
   return (
     <>
-      <div className="main-container">
-        <div className="poster-container">
-          <img src={poster} className="poster" />
-        </div>
-        <div className="ticket-container">
-          <div className="ticket__content">
-            <h4 className="ticket__movie-title">{titulo}</h4>
+      <li class="cards_item">
+        <div className="card mat-card">
+          <div className="poster-container">
+            <img src={poster} className="card_image" />
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">{titulo}</h2>
 
-            <p className="ticket__current-price">{tipo}</p>
-            <p className="ticket__old-price">{estreno}</p>
+            <p class="card_text" id={tipo}> <small>{tipo}</small>
+              
+            </p>
+            <p class="card_text">Estreno: {estreno}</p>
             <button className="ticket__buy-btn">
               Faltan: {Math.round(resta / (1000 * 60 * 60 * 24))} Dias
             </button>
           </div>
         </div>
-      </div>
+      </li>
     </>
   );
 };
