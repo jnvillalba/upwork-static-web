@@ -3,12 +3,14 @@ import "../App.css";
 import MovieCard from "./MovieCard";
 import './styles.css'
 
+
 const Home = () => {
   return (
     <>
       <div className="container">
         <h1 className="center">2023</h1>
         <div className="row">
+        
           <div className="hero-container">
             <MovieCard
               titulo="Ant-Man y la Avispa: Quantumanía"

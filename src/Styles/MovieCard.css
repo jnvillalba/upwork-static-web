@@ -13,20 +13,24 @@ body {
   background-size: cover;
   background-repeat: repeat;
   font-family: "Roboto", sans-serif;
+  background-attachment: fixed;
+  
 }
+
+#scale{transform: scale(1.5);}
 
 .hero-container {
   display: flex;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 850px) {
   .hero-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
   }
 }
 

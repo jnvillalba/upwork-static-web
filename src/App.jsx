@@ -3,7 +3,6 @@ import {BrowserRouter, Routes, Route}from 'react-router-dom'
 import Home from './Components/Home'
 import NotFound from './Components/NotFound'
 import './App.css'
-import NavBar from './Components/NavBar'
 
 
 
@@ -25,5 +24,5 @@ function App() {
 
 export default App
 
-/*<Route exact path='/Categories' element={<CategoriesRoute />} /> 
+/*<Route exact path='/Categories' element={<ControlledCarousel/>} /> 
 <Route exact path='/Categories/:id' element={<CategoryPage />} /> */
