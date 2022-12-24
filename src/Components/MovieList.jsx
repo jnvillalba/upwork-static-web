@@ -14,14 +14,19 @@ const MovieList = ({ año, list }) => {
   return (
     <>
       <header>
-        <h1 className="header">{año}</h1>
+        <div className="col text-center">
+          <h1 className="title col text-center">
+            {año}
+            <Button className="" variant="danger" onClick={goToNext}>
+              {next}
+            </Button>
+          </h1>
+        </div>
       </header>
+
       <div className="container">
         <div className="row">
-          <Button className="center" variant="danger" onClick={goToNext}>
-            {next}
-          </Button>
-          <ul class="cards">
+          <ul className="cards">
             {list.map((c) => (
               <MovieCard
                 key={c.id}

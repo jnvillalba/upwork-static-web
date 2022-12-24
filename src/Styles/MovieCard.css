@@ -12,92 +12,22 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
-  font-family: "Roboto", sans-serif;
   background-attachment: fixed;
-}
-
-#scale {
-  transform: scale(1.5);
-}
-
-.hero-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 850px) {
-  .hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.main-container {
-  width: 270px;
-  height: 540px;
-
-  margin: 15px;
-  justify-content: space-between;
-}
-
-.poster {
-  width: 100%;
-
-  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
-}
-
-.ticket-container {
-  background: #fff;
-  width: 270px;
-  height: 520px;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  border-radius: 5px;
-  position: absolute;
-  top: 20px;
-  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
-  opacity: 1;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.ticket__content {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-}
-
-.ticket__movie-title {
-  text-transform: uppercase;
-  margin-top: 15px;
 }
 
 #Pelicula {
   color: #f0131e;
-  font-size: 1.4rem;
   font-weight: bold;
 }
 
 #Serie {
   color: #113ccf;
-  font-size: 1.4rem;
   font-weight: bold;
 }
 
-.ticket__old-price {
-  margin-bottom: 10px;
-}
 
 .ticket__buy-btn {
-  cursor: wait;
+
   width: 100%;
   background: #2f2f2f;
   color: white;
@@ -106,44 +36,20 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   border: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-
-/* Font */
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 
 .main {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-}
-
 img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
-}
-
-.btn2 {
-  color: #ffffff;
-  padding: 0.8rem;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  font-weight: 400;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
-}
-
-.btn2:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  border-top: 10px;
 }
 
 .cards {
@@ -176,7 +82,6 @@ img {
   background-color: white;
   border-radius: 10px;
   border-color: black;
-
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
@@ -192,11 +97,10 @@ img {
 }
 
 .card_text {
+  margin-top: 5px;
   font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-  font-weight: 400;
 }
+
 .made_by {
   font-weight: 400;
   font-size: 13px;
@@ -204,6 +108,7 @@ img {
   text-align: center;
 }
 
-.card_content h2,p{
+.card_content h2,
+p {
   margin-left: 5px;
 }
