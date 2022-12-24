@@ -1,0 +1,9 @@
+.center{
+    height: 100%;
+    background: #f0131e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+  }
