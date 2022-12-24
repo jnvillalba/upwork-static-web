@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import MovieCard from "./MovieCard";
+import './styles.css'
 
 const Home = () => {
   return (
