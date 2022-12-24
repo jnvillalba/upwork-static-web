@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/next-movies-days/build/static/css/main.551d9db9.css",
+    "main.js": "/next-movies-days/build/static/js/main.7be7d08e.js",
+    "index.html": "/next-movies-days/build/index.html",
+    "main.551d9db9.css.map": "/next-movies-days/build/static/css/main.551d9db9.css.map",
+    "main.7be7d08e.js.map": "/next-movies-days/build/static/js/main.7be7d08e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.551d9db9.css",
+    "static/js/main.7be7d08e.js"
+  ]
+}

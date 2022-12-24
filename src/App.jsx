@@ -19,7 +19,7 @@ function App() {
         <Route index element={<MovieList año={2023} list={content2023List}/>} />
         <Route exact path='/2024' element={<MovieList año={2024} list={content2024List}/>}/> 
 
-        <Route exact path='*' element={<NotFound/>}/>          
+        <Route exact path='*' element={<MovieList año={2023} list={content2023List}/>}/>          
       </Routes>
     </BrowserRouter>
   </>
