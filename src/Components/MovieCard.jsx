@@ -18,7 +18,8 @@ const MovieCard = ({ titulo, tipo, poster, estreno }) => {
   return (
     <>
       <li className="cards_item">
-        <div className="card mat-card">
+      {poster!="" &&
+        <div className="card">
           <div className="poster-container">
             <img src={poster} className="card_image img-poster" />
           </div>
@@ -29,12 +30,14 @@ const MovieCard = ({ titulo, tipo, poster, estreno }) => {
               {" "}
               {tipo}
             </p>
-            <p className="card_text">Estreno: {estreno}</p>
+            <p className="card_text">
+              Estreno: {estreno}</p>
+              {estreno!="TBA" &&
             <section className="ticket__buy-btn text-center">
               Faltan: {Math.round(resta / (1000 * 60 * 60 * 24))} Dias
-            </section>
+            </section>}
           </div>
-        </div>
+        </div>}
       </li>
     </>
   );
