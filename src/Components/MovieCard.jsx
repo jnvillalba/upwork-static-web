@@ -20,11 +20,11 @@ const MovieCard = ({ titulo, tipo, poster, estreno }) => {
       <li className="cards_item">
         <div className="card mat-card">
           <div className="poster-container">
-            <img src={poster} className="card_image" />
+            <img src={poster} className="card_image img-poster" />
           </div>
           <div className="card_content">
             <h2 className="card_title">{titulo}</h2>
-
+            
             <p className="card_text" id={tipo}>
               {" "}
               {tipo}
