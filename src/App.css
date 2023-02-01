@@ -1,15 +1,26 @@
+body {
+  background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)),
+    url("https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DA2E198288BFCA56AB53340211B38DE7134E40E4521EDCAFE6FFB8CD69250DE9/scale?width=1440&aspectRatio=1.78&format=jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
 
+#Pelicula {
+  background-color: #f0131e;
+  color: aliceblue;
+  font-weight: bold;
+}
 
-.title{
-    height: 100%;
-    background: #f0131e;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: aliceblue;
-  }
+#Serie {
+  background-color: #113ccf;
+  color: aliceblue;
+  font-weight: bold;
+}
 
-  
-
-
+.año {
+  color: aliceblue;
+  text-align: center;
+  ;
+}

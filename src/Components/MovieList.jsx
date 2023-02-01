@@ -1,8 +1,9 @@
 import React from "react";
 import "../App.css";
-import MovieCard from "./MovieCard";
+import MovieCard from "../Components/NewMovieCard/NewMovieCard";
 import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
+import "../styles.scss";
 
 const MovieList = ({ año, list }) => {
   const next = año + 1;
@@ -12,8 +13,11 @@ const MovieList = ({ año, list }) => {
   return (
     <>
       <div className="container">
-        <div className="row">
-          <ul className="cards">
+      
+        <div className="container_cards">
+        <h1 className="año">{año? año : "TBA"}</h1>
+          <div className="container_projects">
+            
             {list.map((c) => (
               <MovieCard
                 key={c.id}
@@ -23,7 +27,7 @@ const MovieList = ({ año, list }) => {
                 tipo={c.tipo}
               />
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </>

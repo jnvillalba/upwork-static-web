@@ -1,12 +1,7 @@
 import React from "react";
-import "../App.css";
-
 
 const Home = () => {
-  return (
-    <>
-    </>
-  );
+  return <>//TODO: feature</>;
 };
 
 export default Home;
