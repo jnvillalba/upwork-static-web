@@ -52,7 +52,7 @@ function App() {
           <Route
             exact
             path="*"
-            element={<MovieList año={2023} list={content2023List} />}
+            element={<Home />}
           />
         </Routes>
       </BrowserRouter>
