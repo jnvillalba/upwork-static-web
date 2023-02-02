@@ -21,6 +21,11 @@ function App() {
         <Routes>
           <Route
             index
+            element={<Home />}
+          />
+          <Route
+            exact
+            path="/2023"
             element={<MovieList año={2023} list={content2023List} />}
           />
           <Route

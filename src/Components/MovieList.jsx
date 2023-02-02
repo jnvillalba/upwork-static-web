@@ -3,7 +3,7 @@ import "../App.css";
 import MovieCard from "../Components/NewMovieCard/NewMovieCard";
 import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import "../styles.scss";
+
 
 const MovieList = ({ año, list }) => {
   const next = año + 1;

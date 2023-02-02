@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./NewMovieCard.css";
 
+
 const MovieCard = ({ titulo, tipo, poster, estreno }) => {
   const navigate = useNavigate();
   const goToHome = () => navigate("/");
@@ -18,7 +19,7 @@ const MovieCard = ({ titulo, tipo, poster, estreno }) => {
   return (
     <>
     
-      {poster != "" && (
+      {poster !== "" && (
         <div className="card">
           {estreno !== "TBA" && (
             <div class="date" id={tipo}>
@@ -26,11 +27,11 @@ const MovieCard = ({ titulo, tipo, poster, estreno }) => {
             </div>
           )}
           <div className="image">
-            <img src={poster} />
+            <img src={poster} alt="poster" />
           </div>
           <div className="details">
             <div className="back">
-              <img src={poster} />
+              <img src={poster}alt="poster" />
 
               <div className="center">
                 <h1>

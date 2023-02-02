@@ -1,7 +1,12 @@
 import React from "react";
+import Studio from "../Studio/Studio";
+
 
 const Home = () => {
-  return <>//TODO: feature</>;
+  return <>
+  <Studio/>
+
+  </>;
 };
 
 export default Home;
