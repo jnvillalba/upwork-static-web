@@ -4,7 +4,7 @@ const content2023List = [
         titulo:"Ant-Man & The Wasp: Quantumania",
         tipo:"Pelicula",
         poster:"https://m.media-amazon.com/images/M/MV5BNDgyNGM4NTYtN2M3MS00YTY2LTk0OWUtZmIzYjg3MmQ0OGM4XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
-        estreno:"17/02/2023"
+        estreno:"15/02/2023"
         
     },
 
