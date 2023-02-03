@@ -1,14 +1,15 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link, Outlet } from "react-router-dom";
+import { Link} from "react-router-dom";
 import styles from "./NavBar.module.css";
 
 import "./NavBar.css";
+import HomeButton from "../Home/HomeButton";
 
 export default function NavBar() {
   return (
     <>
-      <Navbar className={styles.NavBg} expand="lg" variant="light">
+      <Navbar className={styles.NavBg} expand="md" variant="light">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img
@@ -34,6 +35,12 @@ export default function NavBar() {
               </Nav.Link>
               <Nav.Link as={Link} to="/tba">
                 TBA
+              </Nav.Link>
+              
+            </Nav>
+            <Nav>
+            <Nav.Link as={Link} to="/Home">
+                <HomeButton/>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

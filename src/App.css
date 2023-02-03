@@ -1,12 +1,13 @@
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)),
-    url("https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DA2E198288BFCA56AB53340211B38DE7134E40E4521EDCAFE6FFB8CD69250DE9/scale?width=1440&aspectRatio=1.78&format=jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95));
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
 }
 
 #Pelicula {
@@ -26,7 +27,7 @@ body {
   font-weight: bold;
 }
 #DCU {
-  background-color: #0476F2;
+  background-color: #0476f2;
   color: aliceblue;
   font-weight: bold;
 }
@@ -38,11 +39,12 @@ body {
 }
 
 .año {
+  margin-top: 10px;
   color: aliceblue;
   text-align: center;
 }
 
-.studio{
+.studio {
   width: 330px;
   height: 260px;
   justify-items: center;
@@ -52,6 +54,14 @@ body {
 #dcBackground {
   background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)),
     url("https://i0.wp.com/www.comicsuniverse.it/wp-content/uploads/2022/12/FkHapV2WQAEowM-.jpeg?ssl=1");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+#marvelBackground {
+  background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)),
+    url("https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DA2E198288BFCA56AB53340211B38DE7134E40E4521EDCAFE6FFB8CD69250DE9/scale?width=1440&aspectRatio=1.78&format=jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;

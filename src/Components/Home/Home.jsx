@@ -12,7 +12,8 @@ const Home = () => {
     "https://i0.wp.com/www.comicsuniverse.it/wp-content/uploads/2022/12/FkGzHi_XEAA60bL.jpeg?ssl=1";
   return (
     <>
-      <div className="container_cards">
+      <div className="container_cards mt-2">
+        <h1 className="año"> Studios</h1>
         <div className="container_projects">
           <Studio poster={marvel} index={goToMarvelIndex} />
           <Studio poster={dc} index={goToDCIndex} />

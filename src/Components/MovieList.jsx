@@ -3,12 +3,13 @@ import "../App.css";
 import MovieCard from "../Components/NewMovieCard/NewMovieCard";
 
 import NavBar from "../Components/NavBar/NavBar";
+import HomeButton from "./Home/HomeButton";
 
 const MovieList = ({ año, list, studio }) => {
   return (
     <>
       <body id={studio + "Background"}>
-        {studio === "marvel" && <NavBar></NavBar>}
+        {studio === "marvel" ? <NavBar /> : <HomeButton />}
         <div className="container">
           <div className="container_cards">
             <h1 className="año">{año ? año : "TBA"}</h1>

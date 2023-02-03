@@ -1,10 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+
 import "./NewMovieCard.css";
 
 const MovieCard = ({ titulo, tipo, poster, estreno, poster2 }) => {
-  const navigate = useNavigate();
-  const goToHome = () => navigate("/Home");
+  
 
   const fechaDia = estreno[0] + estreno[1];
   const fechaMes = estreno[3] + estreno[4];
