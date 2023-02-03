@@ -10,6 +10,8 @@ import { content2024List } from "../src/Lists/2024list";
 import { content2025List } from "./Lists/2025list";
 import { content2026List } from "./Lists/2026list";
 import { tba } from "./Lists/tba";
+import { DCUList } from "./Lists/DC/DCUList";
+
 
 import NavBar from "./Components/NavBar/NavBar";
 
@@ -47,6 +49,11 @@ function App() {
             exact
             path="/tba"
             element={<MovieList list={tba} />}
+          />
+          <Route
+            exact
+            path="/DC"
+            element={<MovieList año={"DC"} list={DCUList} />}
           />
 
           <Route

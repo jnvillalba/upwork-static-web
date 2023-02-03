@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./NewMovieCard.css";
 
 
-const MovieCard = ({ titulo, tipo, poster, estreno }) => {
+const MovieCard = ({ titulo, tipo, poster, estreno, poster2 }) => {
   const navigate = useNavigate();
   const goToHome = () => navigate("/");
 
@@ -31,7 +31,7 @@ const MovieCard = ({ titulo, tipo, poster, estreno }) => {
           </div>
           <div className="details">
             <div className="back">
-              <img src={poster}alt="poster" />
+              <img src={poster2? poster2: poster }alt="poster" />
 
               <div className="center">
                 <h1>

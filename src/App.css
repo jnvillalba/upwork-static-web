@@ -18,9 +18,27 @@ body {
   color: aliceblue;
   font-weight: bold;
 }
+#SerieHBO {
+  background-color: #663399;
+  color: aliceblue;
+  font-weight: bold;
+}
+#DCU {
+  background-color: #0476F2;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+#Elseworlds {
+  background-color: #000;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+
+
 
 .año {
   color: aliceblue;
   text-align: center;
-  ;
 }

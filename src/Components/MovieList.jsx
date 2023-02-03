@@ -22,6 +22,7 @@ const MovieList = ({ año, list }) => {
               <MovieCard
                 key={c.id}
                 poster={c.poster}
+                poster2={c.poster2}
                 titulo={c.titulo}
                 estreno={c.estreno}
                 tipo={c.tipo}
