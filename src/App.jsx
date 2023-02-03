@@ -11,6 +11,7 @@ import { content2025List } from "./Lists/2025list";
 import { content2026List } from "./Lists/2026list";
 import { tba } from "./Lists/tba";
 import { DCUList } from "./Lists/DC/DCUList";
+import { SonyList } from "./Lists/Sony/SonyList";
 
 function App() {
   return (
@@ -55,6 +56,11 @@ function App() {
             exact
             path="/DC"
             element={<MovieList studio={"dc"} año={"DC"} list={DCUList} />}
+          />
+          <Route
+            exact
+            path="/Sony"
+            element={<MovieList studio={"sony"} año={"Sony"} list={SonyList} />}
           />
 
           <Route exact path="*" element={<Home />} />
