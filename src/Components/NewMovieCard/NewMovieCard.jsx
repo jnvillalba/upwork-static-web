@@ -2,10 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./NewMovieCard.css";
 
-
 const MovieCard = ({ titulo, tipo, poster, estreno, poster2 }) => {
   const navigate = useNavigate();
-  const goToHome = () => navigate("/");
+  const goToHome = () => navigate("/Home");
 
   const fechaDia = estreno[0] + estreno[1];
   const fechaMes = estreno[3] + estreno[4];
@@ -18,11 +17,10 @@ const MovieCard = ({ titulo, tipo, poster, estreno, poster2 }) => {
 
   return (
     <>
-    
       {poster !== "" && (
         <div className="card">
           {estreno !== "TBA" && (
-            <div class="date" id={tipo}>
+            <div className="date" id={tipo}>
               {Math.round(resta / (1000 * 60 * 60 * 24))} Días
             </div>
           )}
@@ -31,7 +29,7 @@ const MovieCard = ({ titulo, tipo, poster, estreno, poster2 }) => {
           </div>
           <div className="details">
             <div className="back">
-              <img src={poster2? poster2: poster }alt="poster" />
+              <img src={poster2 ? poster2 : poster} alt="poster" />
 
               <div className="center">
                 <h1>

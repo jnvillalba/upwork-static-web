@@ -1,4 +1,6 @@
 body {
+  padding: 0;
+  margin: 0;
   background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)),
     url("https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DA2E198288BFCA56AB53340211B38DE7134E40E4521EDCAFE6FFB8CD69250DE9/scale?width=1440&aspectRatio=1.78&format=jpeg");
   background-position: center;
@@ -35,10 +37,23 @@ body {
   font-weight: bold;
 }
 
-
-
-
 .año {
   color: aliceblue;
   text-align: center;
+}
+
+.studio{
+  width: 330px;
+  height: 260px;
+  justify-items: center;
+  margin: 10px;
+}
+
+#dcBackground {
+  background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)),
+    url("https://i0.wp.com/www.comicsuniverse.it/wp-content/uploads/2022/12/FkHapV2WQAEowM-.jpeg?ssl=1");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }

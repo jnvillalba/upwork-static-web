@@ -12,55 +12,52 @@ import { content2026List } from "./Lists/2026list";
 import { tba } from "./Lists/tba";
 import { DCUList } from "./Lists/DC/DCUList";
 
-
-import NavBar from "./Components/NavBar/NavBar";
-
 function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar></NavBar>
         <Routes>
-          <Route
-            index
-            element={<Home />}
-          />
+          <Route index element={<Home />} />
           <Route
             exact
             path="/2023"
-            element={<MovieList año={2023} list={content2023List} />}
+            element={
+              <MovieList studio={"marvel"} año={2023} list={content2023List} />
+            }
           />
           <Route
             exact
             path="/2024"
-            element={<MovieList año={2024} list={content2024List} />}
+            element={
+              <MovieList studio={"marvel"} año={2024} list={content2024List} />
+            }
           />
           <Route
             exact
             path="/2025"
-            element={<MovieList año={2025} list={content2025List} />}
+            element={
+              <MovieList studio={"marvel"} año={2025} list={content2025List} />
+            }
           />
           <Route
             exact
             path="/2026"
-            element={<MovieList año={2026} list={content2026List} />}
+            element={
+              <MovieList studio={"marvel"} año={2026} list={content2026List} />
+            }
           />
           <Route
             exact
             path="/tba"
-            element={<MovieList list={tba} />}
+            element={<MovieList studio={"marvel"} list={tba} />}
           />
           <Route
             exact
             path="/DC"
-            element={<MovieList año={"DC"} list={DCUList} />}
+            element={<MovieList studio={"dc"} año={"DC"} list={DCUList} />}
           />
 
-          <Route
-            exact
-            path="*"
-            element={<Home />}
-          />
+          <Route exact path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,6 +1,5 @@
-
 .nav-link {
-  color: #fff
+  color: #fff;
 }
 
 .nav-link:focus {
@@ -9,7 +8,6 @@
   font-size: larger;
 }
 
-.navbar-toggler-icon{
-    color: #fff
-    
+.navbar-toggler-icon {
+  color: #fff;
 }
