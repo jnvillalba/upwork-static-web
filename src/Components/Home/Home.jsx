@@ -12,7 +12,7 @@ const Home = () => {
   const dc =
     "https://i0.wp.com/www.comicsuniverse.it/wp-content/uploads/2022/12/FkGzHi_XEAA60bL.jpeg?ssl=1";
   const sony =
-    "";
+    "https://pbs.twimg.com/media/FXufOEcVUAAt_Ts?format=jpg&name=large";
   return (
     <>
       <div className="container_cards mt-2">
