@@ -55,8 +55,10 @@ const DCUList = [
     id: 6,
     titulo: "The Batman - Part II",
     tipo: "Elseworlds",
-    poster2:"https://m.media-amazon.com/images/M/MV5BM2Y5N2RlMDctYzFhNC00YWQ2LWFhYWItMDc0NDRmMmY1OTRiXkEyXkFqcGdeQXVyODUxNjcxNjE@._V1_.jpg",
-    poster: "https://image.tmdb.org/t/p/original//4SDufPSRRtpoq2QWx1XZyAY9wfz.jpg",
+    poster2:
+      "https://m.media-amazon.com/images/M/MV5BM2Y5N2RlMDctYzFhNC00YWQ2LWFhYWItMDc0NDRmMmY1OTRiXkEyXkFqcGdeQXVyODUxNjcxNjE@._V1_.jpg",
+    poster:
+      "https://image.tmdb.org/t/p/original//4SDufPSRRtpoq2QWx1XZyAY9wfz.jpg",
     estreno: "03/10/2025",
   },
   {
@@ -75,8 +77,7 @@ const DCUList = [
     tipo: "SerieHBO",
     poster:
       "https://assets.mycast.io/posters/creature-commandos-fan-casting-poster-285184-medium.jpg?1675291717",
-    poster2:
-      "http://www.comicbookreligion.com/img/c/r/Creature_Commandos.jpg",
+    poster2: "http://www.comicbookreligion.com/img/c/r/Creature_Commandos.jpg",
     estreno: "TBA",
   },
   {
@@ -101,13 +102,13 @@ const DCUList = [
     estreno: "TBA",
   },
   {
-    id: 11,
-    titulo: "Lanterns",
+    id: 15,
+    titulo: "Booster Gold",
     tipo: "SerieHBO",
-    poster2:
-      "https://assets.mycast.io/posters/lanterns-fan-casting-poster-178945-medium.jpg?1647677559",
     poster:
-      "https://cdn-image.hipwee.com/wp-content/uploads/2023/02/hipwee-328234811_593980145900597_7452593337345801322_n-600x750.jpg",
+      "https://www.elfinanciero.com.mx/resizer/S1by21nKHTMuQciINmgfji77FNA=/1440x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/3BR5YKS2SBBRDBFBRWL2JQAWDI.jpg",
+    poster2:
+      "https://external-preview.redd.it/EGz0O2r2edLNUCa73srJ4SsX8lLHCi6eywuOAbtsWyk.jpg?auto=webp&v=enabled&s=b8c9c0c81684dd4729673d4f7ae1a0658ba20197",
     estreno: "TBA",
   },
   {
@@ -120,6 +121,17 @@ const DCUList = [
       "https://assets.mycast.io/posters/the-brave-and-the-bold-batman-and-robin-fan-casting-poster-285477-medium.jpg?1675373731",
     estreno: "TBA",
   },
+  {
+    id: 11,
+    titulo: "Lanterns",
+    tipo: "SerieHBO",
+    poster2:
+      "https://assets.mycast.io/posters/lanterns-fan-casting-poster-178945-medium.jpg?1647677559",
+    poster:
+      "https://cdn-image.hipwee.com/wp-content/uploads/2023/02/hipwee-328234811_593980145900597_7452593337345801322_n-600x750.jpg",
+    estreno: "TBA",
+  },
+
   {
     id: 13,
     titulo: "Supergirl: Woman of Tomorrow",
@@ -139,15 +151,7 @@ const DCUList = [
     poster2: "",
     estreno: "TBA",
   },
-  {
-    id: 15,
-    titulo: "Booster Gold",
-    tipo: "SerieHBO",
-    poster:
-      "https://www.elfinanciero.com.mx/resizer/S1by21nKHTMuQciINmgfji77FNA=/1440x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/3BR5YKS2SBBRDBFBRWL2JQAWDI.jpg",
-    poster2: "https://external-preview.redd.it/EGz0O2r2edLNUCa73srJ4SsX8lLHCi6eywuOAbtsWyk.jpg?auto=webp&v=enabled&s=b8c9c0c81684dd4729673d4f7ae1a0658ba20197",
-    estreno: "TBA",
-  },
+
   {
     id: 16,
     titulo: "Swamp Thing",
