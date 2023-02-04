@@ -1,9 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
-import NotFound from "./Components/NotFound";
 import "./App.css";
-
 import MovieList from "./Components/MovieList";
 import { content2023List } from "./Lists/2023list";
 import { content2024List } from "../src/Lists/2024list";
@@ -55,7 +53,13 @@ function App() {
           <Route
             exact
             path="/DC"
-            element={<MovieList studio={"dc"} año={"DC Universe Chapter 1: God and Monsters"} list={DCUList} />}
+            element={
+              <MovieList
+                studio={"dc"}
+                año={"DC Universe Chapter 1: God and Monsters"}
+                list={DCUList}
+              />
+            }
           />
           <Route
             exact
@@ -71,6 +75,3 @@ function App() {
 }
 
 export default App;
-
-/*<Route exact path='/Categories' element={<ControlledCarousel/>} /> 
-<Route exact path='/Categories/:id' element={<CategoryPage />} /> */

@@ -1,14 +1,11 @@
 import React from "react";
 import "../App.css";
 import MovieCard from "../Components/NewMovieCard/NewMovieCard";
-
 import NavBar from "../Components/NavBar/NavBar";
-import HomeButton from "./Home/HomeButton";
 
 const MovieList = ({ año, list, studio }) => {
   return (
     <>
-      
         <NavBar studio={studio} />
         <div className="container" id={studio + "Background"}>
           <div className="container_cards">
