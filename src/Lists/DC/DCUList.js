@@ -76,7 +76,7 @@ const DCUList = [
     poster:
       "https://assets.mycast.io/posters/creature-commandos-fan-casting-poster-285184-medium.jpg?1675291717",
     poster2:
-      "https://www.elfinanciero.com.mx/resizer/giYyAEcx0B-iLwSJngJUlvtrF3I=/1440x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/MDJN4SLWU5CITFHOFK5FKYXYF4.jpg",
+      "http://www.comicbookreligion.com/img/c/r/Creature_Commandos.jpg",
     estreno: "TBA",
   },
   {

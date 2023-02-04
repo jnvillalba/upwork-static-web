@@ -12,7 +12,7 @@ const SonyList = [
     titulo: "Kraven the Hunter",
     tipo: "Sony",
     poster:
-      "https://lh3.googleusercontent.com/-CPcmd1NKKtg/YX73hH274FI/AAAAAAAATJg/ZYAKEbn36IIv9-7zWAlg-zXCkCLquVU7QCLcBGAsYHQ/w405-h640/kreven-teaser-poster-2.png",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a58a7719-0dcf-4e0b-b7bb-d2b725dbbb8e/dfdud5l-ab2268f6-548e-4873-9639-a79941713854.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E1OGE3NzE5LTBkY2YtNGUwYi1iN2JiLWQyYjcyNWRiYmI4ZVwvZGZkdWQ1bC1hYjIyNjhmNi01NDhlLTQ4NzMtOTYzOS1hNzk5NDE3MTM4NTQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ykVmZUrU91Us6_jmGs3k1eGa6IXr5_Ono_VwP88wKNs",
     poster2:
       "https://i.pinimg.com/originals/c4/51/85/c4518568e9e40fafc40d9fb4f8beee3b.jpg",
     estreno: "06/10/2023",

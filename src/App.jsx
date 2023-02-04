@@ -55,7 +55,7 @@ function App() {
           <Route
             exact
             path="/DC"
-            element={<MovieList studio={"dc"} año={"DC"} list={DCUList} />}
+            element={<MovieList studio={"dc"} año={"DC Universe Chapter 1: God and Monsters"} list={DCUList} />}
           />
           <Route
             exact

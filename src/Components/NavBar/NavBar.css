@@ -11,3 +11,8 @@
 .navbar-toggler-icon {
   color: #fff;
 }
+
+button.navbar-toggler.collapsed {
+  background-color: #fff;
+  color: black;
+}

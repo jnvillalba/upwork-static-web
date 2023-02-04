@@ -8,9 +8,9 @@ import HomeButton from "./Home/HomeButton";
 const MovieList = ({ año, list, studio }) => {
   return (
     <>
-      <body id={studio + "Background"}>
-        {studio === "marvel" ? <NavBar /> : <HomeButton />}
-        <div className="container">
+      
+        <NavBar studio={studio} />
+        <div className="container" id={studio + "Background"}>
           <div className="container_cards">
             <h1 className="año">{año ? año : "TBA"}</h1>
             <div className="container_projects">
@@ -27,7 +27,7 @@ const MovieList = ({ año, list, studio }) => {
             </div>
           </div>
         </div>
-      </body>
+      
     </>
   );
 };
