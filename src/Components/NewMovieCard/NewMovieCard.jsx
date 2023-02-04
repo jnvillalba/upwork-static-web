@@ -28,7 +28,7 @@ const MovieCard = ({ titulo, tipo, poster, estreno, poster2 }) => {
           </div>
           <div className="details">
             <div className="back">
-              <img src={poster2 ? poster2 : poster} alt="poster" />
+              <img src={poster2 ? poster2 : poster} alt={titulo+" poster" }/>
 
               <div className="center">
                 <h1>

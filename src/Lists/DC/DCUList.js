@@ -64,7 +64,7 @@ const DCUList = [
     titulo: "Superman Legacy",
     tipo: "DCU",
     poster:
-      "https://www.elfinanciero.com.mx/resizer/xqiXgDZEr4_6hkATTpfWKWLZa7I=/1440x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/elfinanciero/TRHP27HWSFCAZMJM2RCYFTNBDQ.jpg",
+      "https://cdn-image.hipwee.com/wp-content/uploads/2023/02/hipwee-328347329_902950704457661_8962827073113017697_n-600x750.jpg",
     poster2:
       "https://assets.mycast.io/posters/superman-legacy-fan-casting-poster-285083-medium.jpg?1675268191",
     estreno: "11/07/2025",
