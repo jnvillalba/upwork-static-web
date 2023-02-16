@@ -7,7 +7,7 @@ const MovieList = ({ año, list, studio }) => {
   return (
     <>
         <NavBar studio={studio} />
-        <div className="container" id={studio + "Background"}>
+        <div className="container mt-2" id={studio + "Background"}>
           <div className="container_cards">
             <h1 className="año">{año ? año : "TBA"}</h1>
             <div className="container_projects">

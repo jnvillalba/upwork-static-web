@@ -15,9 +15,9 @@ const DCUList = [
     titulo: "The Flash",
     tipo: "DCU",
     poster:
-      " https://m.media-amazon.com/images/M/MV5BOWNhMGU5MjEtMGVkYi00M2RiLWE5NjUtY2U5NDAxZTcwNDY0XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
+      "https://m.media-amazon.com/images/M/MV5BMDFhZTc3NWQtY2UyZS00OGYzLTgxNTUtYjYxMjZjMmEyMjcwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
     poster2:
-      "https://i.pinimg.com/originals/fb/ff/84/fbff84ea4b51cf1524c2a95fdac2183e.jpg",
+      "https://pbs.twimg.com/media/FpDNAy1XEAAiF14?format=jpg&name=large",
     estreno: "17/06/2023",
   },
 

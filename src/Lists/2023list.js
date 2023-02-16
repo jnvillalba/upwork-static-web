@@ -1,16 +1,5 @@
 const content2023List = [
   {
-    id: 1,
-    titulo: "Ant-Man & The Wasp: Quantumania",
-    tipo: "Pelicula",
-    poster:
-      "https://m.media-amazon.com/images/M/MV5BNDgyNGM4NTYtN2M3MS00YTY2LTk0OWUtZmIzYjg3MmQ0OGM4XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
-    estreno: "15/02/2023",
-    poster2:
-      "https://m.media-amazon.com/images/M/MV5BZDY0Mjg1OTEtMDEyNS00OWM0LTg0YTYtNjA3YzY2NGRjYWJiXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
-  },
-
-  {
     id: 2,
     titulo: "Secret Invasion",
     tipo: "Serie",
@@ -38,7 +27,7 @@ const content2023List = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BNmFlMThmYTYtOWNhMi00N2Y5LTljZWItMWQxN2U5OTA5MmFjXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_.jpg",
     estreno: "05/05/2023",
-    poster2: "https://i.pinimg.com/564x/4c/7d/c9/4c7dc9501340111c03991e69e165350a.jpg",
+    poster2: "https://m.media-amazon.com/images/M/MV5BMDgxOTdjMzYtZGQxMS00ZTAzLWI4Y2UtMTQzN2VlYjYyZWRiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
   },
 
   {
@@ -56,7 +45,7 @@ const content2023List = [
     titulo: "Loki S2",
     tipo: "Serie",
     poster2:
-      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bf853092-d54d-4bd0-842b-1facd2b89c32/dfem6hd-b11a2916-8340-42ea-8307-e647a1aa0cf2.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JmODUzMDkyLWQ1NGQtNGJkMC04NDJiLTFmYWNkMmI4OWMzMlwvZGZlbTZoZC1iMTFhMjkxNi04MzQwLTQyZWEtODMwNy1lNjQ3YTFhYTBjZjIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-lkmTcas-e-lRadtisFYjMFS8QcxjstLXTjgBEhP4ZI",
+      "https://i.pinimg.com/564x/b4/94/e1/b494e169e13462b2101133288a755330.jpg",
     estreno: "21/06/2023",
     poster: "https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_loki_s2_ticketnumber_v2_613_34f612c4.jpeg",
   },

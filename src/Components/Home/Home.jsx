@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container_cards mt-2">
+      <div className="container container_cards mt-5">
         <h1 className="año">Studios</h1>
         <div className="container_projects">
           <Studio poster={marvel} index={goToMarvelIndex} />
