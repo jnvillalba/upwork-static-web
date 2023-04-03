@@ -1,16 +1,5 @@
 const DCUList = [
   {
-    id: 1,
-    titulo: "Shazam! Fury of the Gods",
-    tipo: "DCU",
-    poster:
-      "https://m.media-amazon.com/images/M/MV5BNzJlM2NmZTItOGQyYS00MmE2LTkwZGUtNDFkNmJmZjRjZjcxXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
-
-    poster2:
-      "https://m.media-amazon.com/images/M/MV5BMzk4NzI3M2YtNTU0Zi00NDU3LTgxYTUtOWY0NmZiMzU5MzlhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
-    estreno: "17/03/2023",
-  },
-  {
     id: 2,
     titulo: "The Flash",
     tipo: "DCU",

@@ -1,26 +1,24 @@
 const content2023List = [
   {
+    id: 4,
+    titulo: "Guardians of the Galaxy Vol. 3",
+    tipo: "Pelicula",
+    poster2:
+      "https://pbs.twimg.com/media/FszFC9YWIAA4ImR?format=jpg&name=large",
+    estreno: "05/05/2023",
+    poster:
+      "https://m.media-amazon.com/images/M/MV5BMDgxOTdjMzYtZGQxMS00ZTAzLWI4Y2UtMTQzN2VlYjYyZWRiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+  },
+  {
     id: 2,
     titulo: "Secret Invasion",
     tipo: "Serie",
     poster:
-      "https://lumiere-a.akamaihd.net/v1/images/p_secretinvasion_556_768854db.jpeg",
-    estreno: "Primavera - EEUU",
+      "https://m.media-amazon.com/images/M/MV5BYjJiN2M5MmItNmUwMS00MzI4LWI3ZTgtMTUxYmI1YTA3ZDExXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg",
+    estreno: "21/06/2023",
     poster2:
       "https://assets.mycast.io/posters/secret-invasion-fan-casting-poster-226828-medium.jpg?1660484942",
   },
-
-  {
-    id: 4,
-    titulo: "Guardians of the Galaxy Vol. 3",
-    tipo: "Pelicula",
-    poster:
-      "https://m.media-amazon.com/images/M/MV5BNmFlMThmYTYtOWNhMi00N2Y5LTljZWItMWQxN2U5OTA5MmFjXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_.jpg",
-    estreno: "05/05/2023",
-    poster2:
-      "https://m.media-amazon.com/images/M/MV5BMDgxOTdjMzYtZGQxMS00ZTAzLWI4Y2UtMTQzN2VlYjYyZWRiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
-  },
-
   {
     id: 6,
     titulo: "Loki S2",
