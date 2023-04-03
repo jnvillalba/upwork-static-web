@@ -42,6 +42,7 @@ svg {
   background-color: #000;
   color: aliceblue;
   font-weight: bold;
+  border: solid 1px white;
 }
 
 .año {
