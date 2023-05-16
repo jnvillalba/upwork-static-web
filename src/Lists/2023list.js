@@ -1,15 +1,5 @@
 const content2023List = [
   {
-    id: 4,
-    titulo: "Guardians of the Galaxy Vol. 3",
-    tipo: "Pelicula",
-    poster2:
-      "https://pbs.twimg.com/media/FszFC9YWIAA4ImR?format=jpg&name=large",
-    estreno: "05/05/2023",
-    poster:
-      "https://m.media-amazon.com/images/M/MV5BMDgxOTdjMzYtZGQxMS00ZTAzLWI4Y2UtMTQzN2VlYjYyZWRiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
-  },
-  {
     id: 2,
     titulo: "Secret Invasion",
     tipo: "Serie",
@@ -25,7 +15,7 @@ const content2023List = [
     tipo: "Serie",
     poster2:
       "https://i.pinimg.com/564x/b4/94/e1/b494e169e13462b2101133288a755330.jpg",
-    estreno: "Verano - EEUU",
+    estreno: "06/10/2023",
     poster:
       "https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_loki_s2_ticketnumber_v2_613_34f612c4.jpeg",
   },
@@ -38,6 +28,16 @@ const content2023List = [
     estreno: "10/11/2023",
     poster2:
       "https://assets.mycast.io/posters/mcu-captain-marvel-the-marvels-movie-fan-casting-poster-263386-medium.jpg?1669670987",
+  },
+  {
+    id: 5,
+    titulo: "Echo",
+    tipo: "Serie",
+    poster:
+      "https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_echo_22212_v2_f5b30836.jpeg",
+    estreno: "29/11/2023",
+    poster2:
+      "https://assets.mycast.io/posters/mcu-echo-series-fan-casting-poster-263248-medium.jpg?1669630974",
   },
 
   {

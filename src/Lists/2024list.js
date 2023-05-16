@@ -47,17 +47,6 @@ const content2024List = [
     poster2:
       "https://cdna.artstation.com/p/assets/images/images/054/482/986/large/rahal-nejraoui-deadpool-3-fanart-by-rahalarts.jpg?1664646307",
   },
-
-  {
-    id: 5,
-    titulo: "Echo",
-    tipo: "Serie",
-    poster:
-      "https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_echo_22212_v2_f5b30836.jpeg",
-    estreno: "TBA",
-    poster2:
-      "https://assets.mycast.io/posters/mcu-echo-series-fan-casting-poster-263248-medium.jpg?1669630974",
-  },
   {
     id: 8,
     titulo: "Ironheart",
