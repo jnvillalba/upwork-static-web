@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
       <div className="container container_cards">
-        <h1 className="año">Studios</h1>
+        <h1 className="año mb-5">Studios</h1>
         <div className="container_projects">
           <figure class="icon-cards mt-3">
             <div class="icon-cards__content">

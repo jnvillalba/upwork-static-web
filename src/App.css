@@ -10,12 +10,20 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
- /* background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95));*/
-  background: rgb(27,18,29);
-  background: -moz-linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
-  background: linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
-
+  /* background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95));*/
+  background: rgb(27, 18, 29);
+  background: -moz-linear-gradient(90deg,
+      rgba(27, 18, 29, 1) 0%,
+      rgba(18, 15, 47, 1) 50%,
+      rgba(27, 18, 29, 1) 100%);
+  background: -webkit-linear-gradient(90deg,
+      rgba(27, 18, 29, 1) 0%,
+      rgba(18, 15, 47, 1) 50%,
+      rgba(27, 18, 29, 1) 100%);
+  background: linear-gradient(90deg,
+      rgba(27, 18, 29, 1) 0%,
+      rgba(18, 15, 47, 1) 50%,
+      rgba(27, 18, 29, 1) 100%);
 }
 
 svg {
@@ -35,11 +43,13 @@ svg {
   color: aliceblue;
   font-weight: bold;
 }
+
 #SerieHBO {
   background-color: #663399;
   color: aliceblue;
   font-weight: bold;
 }
+
 #DCU {
   background-color: #0476f2;
   color: aliceblue;
@@ -60,21 +70,22 @@ svg {
 }
 
 .año {
-  
   color: aliceblue;
   text-align: center;
+
 }
 
 .studio {
   width: 330px;
   height: 260px;
-  justify-items: center;
-  margin: 10px;
- 
-  box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   transform-origin: center;
 }
+
+
+
+
 
 #dcBackground {
   background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)),
@@ -84,6 +95,7 @@ svg {
   background-repeat: repeat;
   background-attachment: fixed;
 }
+
 #marvelBackground {
   background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)),
     url("https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DA2E198288BFCA56AB53340211B38DE7134E40E4521EDCAFE6FFB8CD69250DE9/scale?width=1440&aspectRatio=1.78&format=jpeg");
@@ -113,6 +125,7 @@ svg {
   perspective: 1000px;
   transform-origin: center;
 }
+
 .icon-cards__content {
   position: absolute;
   width: 100%;
@@ -120,11 +133,13 @@ svg {
   transform-origin: center;
   transform-style: preserve-3d;
   transform: translateZ(-30vw) rotateY(0);
-  animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  animation: carousel 12s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
-.icon-cards__content.step-animation {
-  animation: carousel 8s infinite steps(1) forwards;
+
+.icon-cards__content:nth-child(n):hover {
+  animation-play-state: paused;
 }
+
 .icon-cards__item {
   position: absolute;
   top: 0;
@@ -132,51 +147,62 @@ svg {
   right: 0;
   bottom: 0;
 }
+
 .icon-cards__item:nth-child(1) {
   transform: rotateY(0) translateZ(35vw);
 }
+
 .icon-cards__item:nth-child(2) {
   transform: rotateY(120deg) translateZ(35vw);
 }
+
 .icon-cards__item:nth-child(3) {
   transform: rotateY(240deg) translateZ(35vw);
 }
+
 @keyframes carousel {
-  0%, 17.5% {
+
+  0%,
+  17.5% {
     transform: translateZ(-35vw) rotateY(0);
- }
-  27.5%, 45% {
+  }
+
+  27.5%,
+  45% {
     transform: translateZ(-35vw) rotateY(-120deg);
- }
-  55%, 72.5% {
+  }
+
+  55%,
+  72.5% {
     transform: translateZ(-35vw) rotateY(-240deg);
- }
-  82.5%, 100% {
+  }
+
+  82.5%,
+  100% {
     transform: translateZ(-35vw) rotateY(-360deg);
- }
+  }
+
+
 }
 
-@keyframes jelly {
-  from {
-    transform: scale(1, 1);
- }
-  30% {
-    transform: scale(1.25, 0.75);
- }
-  40% {
-    transform: scale(0.75, 1.25);
- }
-  50% {
-    transform: scale(1.15, 0.85);
- }
-  65% {
-    transform: scale(0.95, 1.05);
- }
-  75% {
-    transform: scale(1.05, 0.95);
- }
-  to {
-    transform: scale(1, 1);
- }
-}
 
+@media only screen and (max-width: 600px) {
+  .studio {
+    padding: 15px;
+    width: 310px;
+    height: 240px;
+  }
+
+  html,
+  body {
+    height: auto;
+  }
+
+  .container {
+    margin-top: 50%;
+  }
+
+  .año {
+    margin-bottom: 20%;
+  }
+}
