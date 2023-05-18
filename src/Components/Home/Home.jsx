@@ -15,19 +15,22 @@ const Home = () => {
     "https://i0.wp.com/www.comicsuniverse.it/wp-content/uploads/2022/12/FkGzHi_XEAA60bL.jpeg?ssl=1";
 
   const sony =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSleexCqOEbHamogRDHYMfmKF6U6WBi6YfMg&usqp=CAU";
+    "https://pbs.twimg.com/media/FXufOEcVUAAt_Ts?format=jpg&name=large";
+
+  const vMarvel = "https://drive.google.com/uc?export=download&id=1YENCr-RMxstzd3oyLWhqvbCQeJT94e23";
+  //"./../../assets/marvel.mp4";
 
   return (
     <>
       <div className="container container d-flex justify-content-center container_cards mt-5">
-        <h1 className="año my-5">Studios</h1>
+        <h1 className="año">Studios</h1>
         <div className="container_projects">
           <figure class="icon-cards mt-3">
             <div class="icon-cards__content">
-              <Studio poster={marvel} index={goToMarvelIndex} />
+              <Studio poster={marvel} index={goToMarvelIndex} video={vMarvel} />
               <Studio poster={dc} index={goToDCIndex} />
               <Studio poster={sony} index={goToSonyIndex} />
-            </div>{" "}
+            </div>
           </figure>
         </div>
       </div>
