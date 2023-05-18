@@ -15,7 +15,7 @@ const Home = () => {
     "https://i0.wp.com/www.comicsuniverse.it/wp-content/uploads/2022/12/FkGzHi_XEAA60bL.jpeg?ssl=1";
 
   const sony =
-    "https://pbs.twimg.com/media/FXufOEcVUAAt_Ts?format=jpg&name=large";
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSleexCqOEbHamogRDHYMfmKF6U6WBi6YfMg&usqp=CAU";
 
   return (
     <>
