@@ -19,8 +19,8 @@ const Home = () => {
 
   return (
     <>
-      <div className="container container_cards">
-        <h1 className="año mb-5">Studios</h1>
+      <div className="container container d-flex justify-content-center container_cards mt-5">
+        <h1 className="año my-5">Studios</h1>
         <div className="container_projects">
           <figure class="icon-cards mt-3">
             <div class="icon-cards__content">
