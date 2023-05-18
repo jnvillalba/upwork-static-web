@@ -3,18 +3,24 @@ body {
   margin: 0;
   /* background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95));*/
   background: rgb(27, 18, 29);
-  background: -moz-linear-gradient(90deg,
-      rgba(27, 18, 29, 1) 0%,
-      rgba(18, 15, 47, 1) 50%,
-      rgba(27, 18, 29, 1) 100%);
-  background: -webkit-linear-gradient(90deg,
-      rgba(27, 18, 29, 1) 0%,
-      rgba(18, 15, 47, 1) 50%,
-      rgba(27, 18, 29, 1) 100%);
-  background: linear-gradient(90deg,
-      rgba(27, 18, 29, 1) 0%,
-      rgba(18, 15, 47, 1) 50%,
-      rgba(27, 18, 29, 1) 100%);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(27, 18, 29, 1) 0%,
+    rgba(18, 15, 47, 1) 50%,
+    rgba(27, 18, 29, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(27, 18, 29, 1) 0%,
+    rgba(18, 15, 47, 1) 50%,
+    rgba(27, 18, 29, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(27, 18, 29, 1) 0%,
+    rgba(18, 15, 47, 1) 50%,
+    rgba(27, 18, 29, 1) 100%
+  );
 }
 
 svg {
@@ -63,7 +69,6 @@ svg {
 .año {
   color: aliceblue;
   text-align: center;
-
 }
 
 .studio {
@@ -72,18 +77,6 @@ svg {
   border-radius: 6px;
   transform-origin: center;
 }
-
-.studio img {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  transform-origin: center;
-}
-
-.container_cards {
-  margin-top: 5%;
-}
-
-
 
 #dcBackground {
   background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)),
@@ -116,8 +109,8 @@ svg {
   position: relative;
   width: 60vw;
   height: 40vw;
-  max-width: 380px;
-  max-height: 250px;
+  max-width: 400px;
+  max-height: 400px;
   margin: 0;
   color: white;
   perspective: 1000px;
@@ -131,7 +124,7 @@ svg {
   transform-origin: center;
   transform-style: preserve-3d;
   transform: translateZ(-30vw) rotateY(0);
-  animation: carousel 12s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  animation: carousel 14s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 
 .icon-cards__content:nth-child(n):hover {
@@ -144,6 +137,11 @@ svg {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.icon-cards__item img {
+  width: 100%;
+  height: 100%;
 }
 
 .icon-cards__item:nth-child(1) {
@@ -159,7 +157,6 @@ svg {
 }
 
 @keyframes carousel {
-
   0%,
   17.5% {
     transform: translateZ(-35vw) rotateY(0);
@@ -179,30 +176,4 @@ svg {
   100% {
     transform: translateZ(-35vw) rotateY(-360deg);
   }
-
-
-}
-
-
-@media only screen and (max-width: 600px) {
-  .studio {
-    padding: 25px;
-    width: 310px;
-    height: 240px;
-  }
-
-  html,
-  body {
-    height: auto;
-  }
-
-  .container_cards {
-    margin-top: 10%;
-  }
-
-  .año {
-    margin-bottom: 20%;
-  }
-
-  
 }
