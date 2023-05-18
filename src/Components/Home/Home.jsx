@@ -17,8 +17,11 @@ const Home = () => {
   const sony =
     "https://pbs.twimg.com/media/FXufOEcVUAAt_Ts?format=jpg&name=large";
 
-  const vMarvel = "https://drive.google.com/uc?export=download&id=1YENCr-RMxstzd3oyLWhqvbCQeJT94e23";
+  const vMarvel =
+    "https://drive.google.com/uc?export=download&id=1YENCr-RMxstzd3oyLWhqvbCQeJT94e23";
   //"./../../assets/marvel.mp4";
+  const vDC = "../../assets/dc.mp4";
+  const vSony = "../../assets/sony.mp4";
 
   return (
     <>
@@ -28,8 +31,8 @@ const Home = () => {
           <figure class="icon-cards mt-3">
             <div class="icon-cards__content">
               <Studio poster={marvel} index={goToMarvelIndex} video={vMarvel} />
-              <Studio poster={dc} index={goToDCIndex} />
-              <Studio poster={sony} index={goToSonyIndex} />
+              <Studio poster={dc} index={goToDCIndex} video={vDC} />
+              <Studio poster={sony} index={goToSonyIndex} video={vSony} />
             </div>
           </figure>
         </div>

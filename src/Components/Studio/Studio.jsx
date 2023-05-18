@@ -45,6 +45,7 @@ function Studio({ poster, index, video }) {
           opacity: isHovered ? 1 : 0,
           transition: "opacity 0.9s ease",
         }}
+        onClick={index}
       >
         <source src={video} type="video/mp4" />
       </video>
