@@ -19,7 +19,8 @@ const Home = () => {
 
   const vMarvel = require("../../assets/marvel.mp4");
   const vDC = require("../../assets/dc.mp4");
-  const vSony = require("../../assets/sony.mp4");
+const vSony = require("../../assets/sony.mp4");
+
 
   return (
     <>

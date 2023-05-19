@@ -1,8 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 function Studio({ poster, index, video }) {
   const videoRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    // Reiniciar el video cuando el componente se monte nuevamente
+    videoRef.current.pause();
+  }, []);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -34,7 +39,6 @@ function Studio({ poster, index, video }) {
         ref={videoRef}
         loop
         autoPlay
-        playsInline
         style={{
           position: "absolute",
           top: "50%",

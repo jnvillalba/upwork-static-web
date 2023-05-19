@@ -1,6 +1,6 @@
-import React from "react";
-
+import React,{useEffect} from "react";
 import "./NewMovieCard.css";
+import AOS from 'aos';
 
 const MovieCard = ({ titulo, tipo, poster, estreno, poster2 }) => {
   const fechaDia = estreno[0] + estreno[1];
@@ -11,6 +11,11 @@ const MovieCard = ({ titulo, tipo, poster, estreno, poster2 }) => {
   let fecha1 = new Date(fechaAño + "/" + fechaMes + "/" + fechaDia);
 
   let resta = fecha1.getTime() - fecha2.getTime();
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  
 
   return (
     <>
