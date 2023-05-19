@@ -17,11 +17,9 @@ const Home = () => {
   const sony =
     "https://pbs.twimg.com/media/FXufOEcVUAAt_Ts?format=jpg&name=large";
 
-  const vMarvel =
-    "https://drive.google.com/uc?export=download&id=1YENCr-RMxstzd3oyLWhqvbCQeJT94e23";
-  //"./../../assets/marvel.mp4";
-  const vDC = "../../assets/dc.mp4";
-  const vSony = "../../assets/sony.mp4";
+  const vMarvel = require("../../assets/marvel.mp4");
+  const vDC = require("../../assets/dc.mp4");
+  const vSony = require("../../assets/sony.mp4");
 
   return (
     <>
