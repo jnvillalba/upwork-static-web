@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
-  const goToMarvelIndex = () => navigate("/next-movies-days/2023");
-  const goToDCIndex = () => navigate("next-movies-days//DC");
-  const goToSonyIndex = () => navigate("next-movies-days//Sony");
+  const goToMarvelIndex = () => navigate("/2023");
+  const goToDCIndex = () => navigate("/DC");
+  const goToSonyIndex = () => navigate("/Sony");
 
   const marvel =
     "https://anthoncode.com/wp-content/uploads/2018/06/marvel-studios-logo-vector.jpg?is-pending-load=1";

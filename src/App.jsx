@@ -20,40 +20,40 @@ function App() {
           <Route index element={<Home />} />
           <Route
             exact
-            path="next-movies-days/2023"
+            path="/2023"
             element={
               <MovieList studio={"marvel"} año={2023} list={content2023List} />
             }
           />
           <Route
             exact
-            path="next-movies-days/2024"
+            path="/2024"
             element={
               <MovieList studio={"marvel"} año={2024} list={content2024List} />
             }
           />
           <Route
             exact
-            path="next-movies-days/2025"
+            path="/2025"
             element={
               <MovieList studio={"marvel"} año={2025} list={content2025List} />
             }
           />
           <Route
             exact
-            path="next-movies-days/2026"
+            path="/2026"
             element={
               <MovieList studio={"marvel"} año={2026} list={content2026List} />
             }
           />
           <Route
             exact
-            path="next-movies-days/tba"
+            path="/tba"
             element={<MovieList studio={"marvel"} list={tba} />}
           />
           <Route
             exact
-            path="next-movies-days/DC"
+            path="/DC"
             element={
               <MovieList
                 studio={"dc"}
@@ -64,12 +64,14 @@ function App() {
           />
           <Route
             exact
-            path="next-movies-days/Sony"
+            path="/Sony"
             element={<MovieList studio={"sony"} año={"Sony"} list={SonyList} />}
           />
 
           <Route exact path="/next-movies-days" element={<Home />} />
           <Route exact path="/next-movies-days/build" element={<Home />} />
+          <Route exact path="/next-movies-days/Home/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route exact path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
