@@ -68,6 +68,8 @@ function App() {
             element={<MovieList studio={"sony"} año={"Sony"} list={SonyList} />}
           />
 
+          <Route exact path="/next-movies-days" element={<Home />} />
+          <Route exact path="/next-movies-days/build" element={<Home />} />
           <Route exact path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
