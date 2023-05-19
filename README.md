@@ -51,8 +51,7 @@ Proyecto donde se puede visualizar días restantes hasta el estreno de película
             width="40"
             height="40"
           />
-        </a>
-        
+      </a>
     </p>
 
 ## Contribución
