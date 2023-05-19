@@ -15,7 +15,7 @@ const MovieCard = ({ titulo, tipo, poster, estreno, poster2 }) => {
   return (
     <>
       {poster !== "" && (
-        <div className="card">
+        <div className="card" data-aos="fade-up">
           {(() => {
             switch (estreno) {
               case "TBA":

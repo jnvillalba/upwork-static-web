@@ -3,7 +3,10 @@ import "../App.css";
 import MovieCard from "../Components/NewMovieCard/NewMovieCard";
 import NavBar from "../Components/NavBar/NavBar";
 
+
 const MovieList = ({ año, list, studio }) => {
+  
+
   return (
     <>
         <NavBar studio={studio} />
@@ -12,7 +15,7 @@ const MovieList = ({ año, list, studio }) => {
             <h1 className="año">{año ? año : "TBA"}</h1>
             <div className="container_projects">
               {list.map((c) => (
-                <MovieCard
+                <MovieCard 
                   key={c.id}
                   poster={c.poster}
                   poster2={c.poster2}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import "./App.css";
@@ -10,6 +10,7 @@ import { content2026List } from "./Lists/2026list";
 import { tba } from "./Lists/tba";
 import { DCUList } from "./Lists/DC/DCUList";
 import { SonyList } from "./Lists/Sony/SonyList";
+import "aos/dist/aos.css";
 
 function App() {
   return (
