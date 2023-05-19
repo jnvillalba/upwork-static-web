@@ -20,40 +20,40 @@ function App() {
           <Route index element={<Home />} />
           <Route
             exact
-            path="/2023"
+            path="next-movies-days/2023"
             element={
               <MovieList studio={"marvel"} año={2023} list={content2023List} />
             }
           />
           <Route
             exact
-            path="/2024"
+            path="next-movies-days/2024"
             element={
               <MovieList studio={"marvel"} año={2024} list={content2024List} />
             }
           />
           <Route
             exact
-            path="/2025"
+            path="next-movies-days/2025"
             element={
               <MovieList studio={"marvel"} año={2025} list={content2025List} />
             }
           />
           <Route
             exact
-            path="/2026"
+            path="next-movies-days/2026"
             element={
               <MovieList studio={"marvel"} año={2026} list={content2026List} />
             }
           />
           <Route
             exact
-            path="/tba"
+            path="next-movies-days/tba"
             element={<MovieList studio={"marvel"} list={tba} />}
           />
           <Route
             exact
-            path="/DC"
+            path="next-movies-days/DC"
             element={
               <MovieList
                 studio={"dc"}
@@ -64,7 +64,7 @@ function App() {
           />
           <Route
             exact
-            path="/Sony"
+            path="next-movies-days/Sony"
             element={<MovieList studio={"sony"} año={"Sony"} list={SonyList} />}
           />
 
