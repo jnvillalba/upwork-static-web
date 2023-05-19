@@ -3,10 +3,7 @@ import "../App.css";
 import MovieCard from "../Components/NewMovieCard/NewMovieCard";
 import NavBar from "../Components/NavBar/NavBar";
 
-
 const MovieList = ({ año, list, studio }) => {
-  
-
   return (
     <>
         <NavBar studio={studio} />
