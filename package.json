@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "https://jnvillalba.github.io/Home",
+  "homepage": "https://jnvillalba.github.io/build/Home",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
