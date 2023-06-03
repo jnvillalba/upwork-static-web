@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/next-movies-days/static/css/main.88c31bab.css",
-    "main.js": "/next-movies-days/static/js/main.6774897f.js",
-    "static/media/marvel.mp4": "/next-movies-days/static/media/marvel.d9837e1789801209e766.mp4",
-    "static/media/dc.mp4": "/next-movies-days/static/media/dc.909460658d8305d756ca.mp4",
-    "static/media/sony.mp4": "/next-movies-days/static/media/sony.eafd4515dc629a754db5.mp4",
-    "index.html": "/next-movies-days/index.html",
-    "main.88c31bab.css.map": "/next-movies-days/static/css/main.88c31bab.css.map",
-    "main.6774897f.js.map": "/next-movies-days/static/js/main.6774897f.js.map"
+    "main.css": "/Home/static/css/main.6e9a54cf.css",
+    "main.js": "/Home/static/js/main.25fb9692.js",
+    "static/media/homescreen.jpg": "/Home/static/media/homescreen.68a1d086e2672ff6eb06.jpg",
+    "index.html": "/Home/index.html",
+    "main.6e9a54cf.css.map": "/Home/static/css/main.6e9a54cf.css.map",
+    "main.25fb9692.js.map": "/Home/static/js/main.25fb9692.js.map"
   },
   "entrypoints": [
-    "static/css/main.88c31bab.css",
-    "static/js/main.6774897f.js"
+    "static/css/main.6e9a54cf.css",
+    "static/js/main.25fb9692.js"
   ]
 }
