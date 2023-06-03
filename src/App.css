@@ -87,19 +87,47 @@ h1 {
 }
 
 .details-container {
-  height: 100vh;
+  min-height: 100vh; /* Cambia height a min-height */
+  width: 100%;
   overflow-y: scroll;
+  position: relative;
 }
 
 .item {
-  height: 100vh;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px; /* Agrega un margen inferior */
 }
 
-.page {
-  max-width: 800px;
-  padding: 5px;
-
+.audio-player {
+/* Ajusta el alto según tus necesidades */
+  position: relative;
 }
+
+#audio {
+  display: none; /* Oculta el reproductor de audio nativo */
+}
+
+.custom-controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-controls button {
+  padding: 10px 20px;
+  background-color: #bca0dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.custom-controls button:focus {
+  outline: none;
+}
+

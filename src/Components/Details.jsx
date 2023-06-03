@@ -90,21 +90,6 @@ function Details({ data, artist }) {
     };
   }, [visibleIndex, scrollPosition]);
 
-  const togglePlay = () => {
-    if (audioPlayer) {
-      if (isPlaying) {
-        audioPlayer.pause();
-      } else {
-        audioPlayer.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
-
-  const handleAudioLoaded = (event) => {
-    const audio = event.target;
-    setAudioPlayer(audio);
-  };
 
   return (
     <div ref={containerRef} className="details-container">
@@ -141,12 +126,13 @@ function Details({ data, artist }) {
                   </li>
                 ))}
             </ul>
+            <div className="audioPlayer">
             {item.MediaIURL && (
               <audio controls>
                 <source src={item.MediaIURL} type="audio/mpeg" />
               </audio>
             )}
-          </div>
+          </div></div>
         </div>
       ))}
     </div>
