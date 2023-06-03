@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "https://jnvillalba.github.io/next-movies-days",
+  "homepage": "https://jnvillalba.github.io/Home",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,12 +9,10 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
-    "csv-parser": "^3.0.0",
     "jquery": "^3.6.3",
     "react": "^18.1.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.1.0",
-    "react-intersection-observer": "^9.4.4",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"

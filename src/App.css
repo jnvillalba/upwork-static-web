@@ -7,7 +7,7 @@ body {
   /* background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95));*/
   background: #3C1361;
   font-family: "American Typewriter", "AmericanTypewriter";
-  
+
 }
 
 h1 {
@@ -40,7 +40,7 @@ h1 {
   padding-bottom: 10px;
 }
 
-.list-text{
+.list-text {
   font-size: 12px;
   color: #bca0dc;
   opacity: 34%;
@@ -58,17 +58,20 @@ h1 {
   font-family: "American Typewriter", "AmericanTypewriter";
 
 }
+
 .descriptionText {
   font-size: 14px;
   color: #bca0dc;
   font-family: 'Hanken Grotesk', sans-serif;
 }
+
 .backBtn {
   color: #bca0dc;
   opacity: 22%;
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 25px;
 }
+
 .area {
   height: 100%;
   width: 100%;
@@ -81,7 +84,9 @@ h1 {
 
 .area:hover {
   background-color: #eaeaea;
-}.details-container {
+}
+
+.details-container {
   height: 100vh;
   overflow-y: scroll;
 }
@@ -96,8 +101,5 @@ h1 {
 .page {
   max-width: 800px;
   padding: 5px;
-  
+
 }
-
-
-
