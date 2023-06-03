@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/build/Home/static/css/main.6e9a54cf.css",
-    "main.js": "/build/Home/static/js/main.ad1f1c37.js",
-    "static/media/homescreen.jpg": "/build/Home/static/media/homescreen.68a1d086e2672ff6eb06.jpg",
-    "index.html": "/build/Home/index.html",
-    "main.6e9a54cf.css.map": "/build/Home/static/css/main.6e9a54cf.css.map",
-    "main.ad1f1c37.js.map": "/build/Home/static/js/main.ad1f1c37.js.map"
+    "main.css": "/upwork-static-web/static/css/main.6e9a54cf.css",
+    "main.js": "/upwork-static-web/static/js/main.e0d0d894.js",
+    "static/media/homescreen.jpg": "/upwork-static-web/static/media/homescreen.68a1d086e2672ff6eb06.jpg",
+    "index.html": "/upwork-static-web/index.html",
+    "main.6e9a54cf.css.map": "/upwork-static-web/static/css/main.6e9a54cf.css.map",
+    "main.e0d0d894.js.map": "/upwork-static-web/static/js/main.e0d0d894.js.map"
   },
   "entrypoints": [
     "static/css/main.6e9a54cf.css",
-    "static/js/main.ad1f1c37.js"
+    "static/js/main.e0d0d894.js"
   ]
 }
