@@ -1,26 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
 function Details({ data, artist }) {
   const navigate = useNavigate();
   const goToHome = () => navigate("/");
-  const [visibleItems, setVisibleItems] = useState([]);
+
+  const [currentOrder, setCurrentOrder] = useState(1);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      const windowHeight =
-        window.innerHeight || document.documentElement.clientHeight;
-      const scrollHeight = document.documentElement.scrollHeight;
-
-      if (scrollTop + windowHeight >= scrollHeight) {
-        setVisibleItems((prevItems) => {
-          const nextItemIndex = prevItems.length;
-          if (nextItemIndex < data.length) {
-            return [...prevItems, data[nextItemIndex]];
-          }
-          return prevItems;
-        });
+      const items = Array.from(document.getElementsByClassName("item"));
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        const itemRect = item.getBoundingClientRect();
+        if (itemRect.top >= 0 && itemRect.top <= window.innerHeight) {
+          setCurrentOrder(parseInt(item.getAttribute("data-order")));
+          break;
+        }
       }
     };
 
@@ -28,43 +24,56 @@ function Details({ data, artist }) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [data]);
+  }, []);
 
-  useEffect(() => {
-    if (data.length > 0) {
-      setVisibleItems([data[0]]);
-    }
-  }, [data]);
-
+  const upcomingTitles = data
+    .slice(0, currentOrder - 1)
+    .map((item) => item.TitleText);
 
   return (
     <div>
-      {visibleItems.map((item, index) => (
-        <div className="container px-4 py-4" key={index}>
-          <button className="btn backBtn" onClick={goToHome}>
-            {" "}
-            {"<<"}{" "}
-          </button>
-          <h1 className="name">{artist.Name}</h1>
-          <h1 className="years">{artist.Years}</h1>
-          {/*<ul>
-            <li className="list-text">{item.TitleText}</li>
-      </ul>*/}
-            <h2 className="year">{item.Year}</h2>
+      <div className="container px-4 pt-4">
+        <button className="btn backBtn" onClick={goToHome}>
+          {" "}
+          {"<<"}{" "}
+        </button>
+        <h1 className="name">{artist.Name}</h1>
+        <h1 className="years">{artist.Years}</h1>
+      </div>
 
-          <div className="">
-            <h2 className="title">{item.TitleText}</h2>
-            <p className="descriptionText">{item.DescriptionText}</p>
-            {item.MediaIURL && (
-              <audio controls>
-                <source src={item.MediaIURL} type="audio/mpeg" />
-              </audio>
-            )}
+      {data.map((item, index) => (
+        <div
+          className={`container px-4 item ${
+            item.Order === currentOrder ? "active" : ""
+          }`}
+          key={index}
+          data-order={item.Order}
+        >
+          <div className="row">
+            <div className="col-md-6">
+              {item.Order === currentOrder ? (
+                <>
+                  <h2 className="year">{item.Year}</h2>
+                  <h2 className="title">{item.TitleText}</h2>
+                  <p className="descriptionText">{item.DescriptionText}</p>
+                </>
+              ) : (
+                <>
+                  <h2 className="year">{item.Year}</h2>
+                  <ul>
+                    {upcomingTitles.map((title, i) => (
+                      <li className="list-text" key={i}>
+                        {title}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>
           </div>
         </div>
       ))}
     </div>
   );
 }
-
 export default Details;
