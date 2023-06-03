@@ -1,21 +1,85 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Details({ data, artist }) {
   const navigate = useNavigate();
   const goToHome = () => navigate("/");
-
-  const [currentOrder, setCurrentOrder] = useState(1);
+  const [visibleIndex, setVisibleIndex] = useState(0);
+  const containerRef = useRef(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [audioPlayer, setAudioPlayer] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const items = Array.from(document.getElementsByClassName("item"));
+      const container = containerRef.current;
+      const containerRect = container.getBoundingClientRect();
+      const containerBottom = containerRect.bottom;
+
+      const items = Array.from(container.getElementsByClassName("item"));
+      let newVisibleIndex = visibleIndex;
+
       for (let i = 0; i < items.length; i++) {
         const item = items[i];
         const itemRect = item.getBoundingClientRect();
-        if (itemRect.top >= 0 && itemRect.top <= window.innerHeight) {
-          setCurrentOrder(parseInt(item.getAttribute("data-order")));
-          break;
+
+        if (itemRect.top <= containerBottom) {
+          newVisibleIndex = i;
+        }
+      }
+
+      setScrollPosition((prevScrollPosition) =>
+        prevScrollPosition < container.scrollTop ? "down" : "up"
+      );
+
+      setVisibleIndex(newVisibleIndex);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [visibleIndex]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const container = containerRef.current;
+      const containerRect = container.getBoundingClientRect();
+      const containerBottom = containerRect.bottom;
+
+      const items = Array.from(container.getElementsByClassName("item"));
+      let newVisibleIndex = visibleIndex;
+
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        const itemRect = item.getBoundingClientRect();
+
+        if (itemRect.top <= containerBottom) {
+          newVisibleIndex = i;
+        }
+      }
+
+      setScrollPosition((prevScrollPosition) =>
+        prevScrollPosition < container.scrollTop ? "down" : "up"
+      );
+
+      setVisibleIndex(newVisibleIndex);
+
+      if (scrollPosition === "down") {
+        if (visibleIndex < data.length - 1) {
+          const nextItem = items[visibleIndex + 1];
+          container.scrollTo({
+            top: container.scrollTop + nextItem.getBoundingClientRect().top,
+            behavior: "smooth",
+          });
+        }
+      } else if (scrollPosition === "up") {
+        if (visibleIndex > 0) {
+          const prevItem = items[visibleIndex - 1];
+          container.scrollTo({
+            top: container.scrollTop + prevItem.getBoundingClientRect().top,
+            behavior: "smooth",
+          });
         }
       }
     };
@@ -24,56 +88,69 @@ function Details({ data, artist }) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [visibleIndex, scrollPosition]);
 
-  const upcomingTitles = data
-    .slice(0, currentOrder - 1)
-    .map((item) => item.TitleText);
+  const togglePlay = () => {
+    if (audioPlayer) {
+      if (isPlaying) {
+        audioPlayer.pause();
+      } else {
+        audioPlayer.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  const handleAudioLoaded = (event) => {
+    const audio = event.target;
+    setAudioPlayer(audio);
+  };
 
   return (
-    <div>
-      <div className="container px-4 pt-4">
-        <button className="btn backBtn" onClick={goToHome}>
-          {" "}
-          {"<<"}{" "}
-        </button>
-        <h1 className="name">{artist.Name}</h1>
-        <h1 className="years">{artist.Years}</h1>
-      </div>
-
+    <div ref={containerRef} className="details-container">
       {data.map((item, index) => (
         <div
-          className={`container px-4 item ${
-            item.Order === currentOrder ? "active" : ""
-          }`}
+          className={`item ${index <= visibleIndex ? "visible" : ""}`}
           key={index}
           data-order={item.Order}
         >
-          <div className="row">
-            <div className="col-md-6">
-              {item.Order === currentOrder ? (
-                <>
-                  <h2 className="year">{item.Year}</h2>
-                  <h2 className="title">{item.TitleText}</h2>
-                  <p className="descriptionText">{item.DescriptionText}</p>
-                </>
-              ) : (
-                <>
-                  <h2 className="year">{item.Year}</h2>
-                  <ul>
-                    {upcomingTitles.map((title, i) => (
-                      <li className="list-text" key={i}>
-                        {title}
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
-            </div>
+          <div className="page-content px-4">
+            <button className="btn backBtn" onClick={goToHome}>{"<<"}</button>
+            <h1 className="name">{artist.Name}</h1>
+            <h1 className="years">{artist.Years}</h1>
+            <ul>
+              {data
+                .slice(1, item.Order)
+                .map((prevItem) => prevItem.TitleText)
+                .map((prevTitle, i) => (
+                  <li className="list-text" key={i}>
+                    {prevTitle}
+                  </li>
+                ))}
+            </ul>
+            <h2 className="year">{item.Year}</h2>
+            <h2 className="title">{item.TitleText}</h2>
+            <p className="descriptionText">{item.DescriptionText}</p>
+            <ul>
+              {data
+                .slice(item.Order , data.length)
+                .map((nextItem) => nextItem.TitleText)
+                .map((nextTitle, i) => (
+                  <li className="list-text" key={i}>
+                    {nextTitle}
+                  </li>
+                ))}
+            </ul>
+            {item.MediaIURL && (
+              <audio controls>
+                <source src={item.MediaIURL} type="audio/mpeg" />
+              </audio>
+            )}
           </div>
         </div>
       ))}
     </div>
   );
 }
+
 export default Details;

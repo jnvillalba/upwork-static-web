@@ -81,4 +81,23 @@ h1 {
 
 .area:hover {
   background-color: #eaeaea;
+}.details-container {
+  height: 100vh;
+  overflow-y: scroll;
 }
+
+.item {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  max-width: 800px;
+  padding: 5px;
+  
+}
+
+
+
