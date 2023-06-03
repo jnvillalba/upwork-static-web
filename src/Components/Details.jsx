@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-
-function Details({ data }) {
+import { useNavigate } from "react-router-dom";
+function Details({ data, artist }) {
+  const navigate = useNavigate();
+  const goToHome = () => navigate("/");
   const [visibleItems, setVisibleItems] = useState([]);
 
   useEffect(() => {
@@ -31,15 +33,18 @@ function Details({ data }) {
       setVisibleItems([data[0]]);
     }
   }, [data]);
-
+console.log(data[0])
   return (
     <div>
+      
       {visibleItems.map((item, index) => (
-        <div className="card mb-3" key={index}>
-          <div className="card-header">
-            <h5>{item.TitleText}</h5>
+        
+        <div className="container" key={index}>
+          <button className="btn" onClick={goToHome}> {"<<"} </button>
+          <div className="">
+            <h1>{item.TitleText}</h1>
           </div>
-          <div className="card-body">
+          <div className="">
             <p>{item.DescriptionText}</p>
             {item.MediaIURL && (
               <audio controls>
