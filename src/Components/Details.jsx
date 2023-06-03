@@ -7,8 +7,10 @@ function Details({ data, artist }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
       const scrollHeight = document.documentElement.scrollHeight;
 
       if (scrollTop + windowHeight >= scrollHeight) {
@@ -33,19 +35,26 @@ function Details({ data, artist }) {
       setVisibleItems([data[0]]);
     }
   }, [data]);
-console.log(data[0])
+
+
   return (
     <div>
-      
       {visibleItems.map((item, index) => (
-        
-        <div className="container" key={index}>
-          <button className="btn" onClick={goToHome}> {"<<"} </button>
+        <div className="container px-4 py-4" key={index}>
+          <button className="btn backBtn" onClick={goToHome}>
+            {" "}
+            {"<<"}{" "}
+          </button>
+          <h1 className="name">{artist.Name}</h1>
+          <h1 className="years">{artist.Years}</h1>
+          {/*<ul>
+            <li className="list-text">{item.TitleText}</li>
+      </ul>*/}
+            <h2 className="year">{item.Year}</h2>
+
           <div className="">
-            <h1>{item.TitleText}</h1>
-          </div>
-          <div className="">
-            <p>{item.DescriptionText}</p>
+            <h2 className="title">{item.TitleText}</h2>
+            <p className="descriptionText">{item.DescriptionText}</p>
             {item.MediaIURL && (
               <audio controls>
                 <source src={item.MediaIURL} type="audio/mpeg" />

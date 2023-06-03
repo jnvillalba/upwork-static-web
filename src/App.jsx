@@ -5,6 +5,7 @@ import "./App.css";
 import "aos/dist/aos.css";
 import Details from "./Components/Details";
 import area1 from "./const/area1";
+import artist1 from "./const/artist1";
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/" element={<Home />} />
-          <Route path="/1" element={<Details data={area1} />} />
+          <Route path="/1" element={<Details data={area1} artist={artist1} />} />
           <Route exact path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
